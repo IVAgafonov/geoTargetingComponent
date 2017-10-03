@@ -13,9 +13,11 @@
     function geoTargetingController() {
         var vm = this;
 
-        vm.geoModel = {};
         vm.circle = {};
         vm.map = {};
+
+        console.log(vm.model);
+        console.log(vm.options);
 
         vm.getCircle = function (target) {
             vm.circle = target;
