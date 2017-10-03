@@ -14,20 +14,14 @@
         var vm = this;
 
         vm.geoModel = {};
-
-        vm.getCircle = function(taget) {
-
-        };
-
-        vm.getMap = function(map) {
-
-        };
+        vm.circle = {};
+        vm.map = {};
 
         vm.getCircle = function (target) {
             vm.circle = target;
             vm.circle.events.add('dragend', function (e) {
                 vm.tryFindAddrByCoords(vm.circle.geometry.getCoordinates());
-            })
+            });
         };
 
         vm.getMap = function (target) {

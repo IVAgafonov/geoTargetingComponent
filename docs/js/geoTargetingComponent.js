@@ -6,7 +6,7 @@
                 model: '=',
                 options: '<'
             },
-            template:'<div class="geo-targeting-component"><ya-map ya-after-init="$ctrl.getMap($target);" ya-zoom="$ctrl.options.zoom" ya-controls ya-center="$ctrl.options.coordinates" style="width: 600px; height: 600px; display: inline-block;"><ya-geo-object ya-after-init="$ctrl.getCircle($target);" ya-source="$ctrl.geoModel" ya-options="{draggable: true, fillColor: \'#ffc53877\',strokeColor: \'#ffc538\',strokeOpacity: 0.8,strokeWidth: 1}"></ya-geo-object></ya-map></div>',
+            template:'<div class="geo-targeting-component"><ya-map ya-after-init="$ctrl.getMap($target);" ya-zoom="$ctrl.options.zoom" ya-controls ya-center="$ctrl.options.coordinates" style="width: 600px; height: 600px; display: inline-block;"><ya-geo-object ya-after-init="$ctrl.getCircle($target);" ya-source="$ctrl.options.object" ya-options="{draggable: true, fillColor: \'#ffc53877\',strokeColor: \'#ffc538\',strokeOpacity: 0.8,strokeWidth: 1}"></ya-geo-object></ya-map></div>',
             controller: [geoTargetingController]
         });
 
@@ -14,20 +14,14 @@
         var vm = this;
 
         vm.geoModel = {};
-
-        vm.getCircle = function(taget) {
-
-        };
-
-        vm.getMap = function(map) {
-
-        };
+        vm.circle = {};
+        vm.map = {};
 
         vm.getCircle = function (target) {
             vm.circle = target;
             vm.circle.events.add('dragend', function (e) {
                 vm.tryFindAddrByCoords(vm.circle.geometry.getCoordinates());
-            })
+            });
         };
 
         vm.getMap = function (target) {
