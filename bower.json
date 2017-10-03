@@ -10,5 +10,9 @@
     "Geo",
     "Targeting"
   ],
+  "dependencies": {
+    "angular": "^1.6.6",
+    "ya-map": "https://github.com/tulov/angular-yandex-map.git#^1.0.9"
+  },
   "homepage": "https://github.com/IVAgafonov/geoTargetingComponent"
 }
