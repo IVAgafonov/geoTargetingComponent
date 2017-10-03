@@ -1,0 +1,14 @@
+{
+  "name": "geo-targeting-component",
+  "description": "Geo targeting component",
+  "main": "index.js",
+  "authors": [
+    "Igor Agafonov"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "Geo",
+    "Targeting"
+  ],
+  "homepage": "https://github.com/IVAgafonov/geoTargetingComponent"
+}
