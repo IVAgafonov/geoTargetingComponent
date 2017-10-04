@@ -66,3 +66,4 @@ Time targeting  options:
 * object.geometry.type - 'Circle'
 * object.geometry.radius - radius (int [km])
 * object.properties.hintContent - title of object
+* onInit: callback call when component init
