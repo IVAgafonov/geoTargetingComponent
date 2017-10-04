@@ -1,7 +1,10 @@
 {
   "name": "geo-targeting-component",
   "description": "Geo targeting component",
-  "main": "index.js",
+  "main": [
+    "/dist/geoTargetingComponent.js",
+    "/dist/geoTargetingComponent.css"
+  ],
   "authors": [
     "Igor Agafonov"
   ],
