@@ -56,6 +56,7 @@ function build() {
     gulp.src(paths.scripts)
         .pipe(embedTemplates())
         .pipe(plugins.uglify())
+        .pipe(plugins.concat('geoTargetingComponent.js'))
         .pipe(gulp.dest('./dist'));
 
     gulp.src(paths.styles)
