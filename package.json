@@ -1,6 +1,6 @@
 {
   "name": "geo-targeting-component",
-  "version": "0.1.6",
+  "version": "0.1.7",
   "description": "Geo targeting component",
   "main": "index.js",
   "directories": {
