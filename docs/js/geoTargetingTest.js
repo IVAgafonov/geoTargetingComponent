@@ -32,7 +32,7 @@
             object: {
                 geometry: {
                     type: 'Circle',
-                    radius: 7000
+                    radius: 7
                 },
                 properties: {
                     hintContent: "Подвинь меня"
